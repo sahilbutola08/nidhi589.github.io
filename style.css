@@ -1,0 +1,149 @@
+*{
+	margin: 0;padding: 0;
+  }
+  .backimg1{
+  	        width: 100%;
+  	        height: 100vh;
+  	        background-image: url('c.jpg');
+  	        background-repeat: no-repeat;
+  	        background-attachment: fixed;
+  	        background-size: 100% 100%;
+  }
+  .backimg2{
+  	        width: 100%;
+  	        height: 100vh;
+  	        background-image: url('a.jpg');
+  	        background-repeat: no-repeat;
+  	        background-attachment: fixed;
+  	        background-size: 100% 100%;
+  }
+  #line{
+  	    color: black;
+  	    text-align: center;
+  	    word-spacing: 2px;
+        font-size: 5em;
+        font-style: italic;
+        font-weight: bolder;
+  }
+  .means{
+  	     color: red;
+  	    font-variant: small-caps;
+  	    text-indent: 10px;
+  	    word-spacing: 2px;
+        font-size: 2em;
+        font-style: italic;
+        font-weight: 500;
+  }
+  .btn1{
+  	    text-decoration:blink;
+  	    font-weight: 900;
+  	    font-size: 14px;
+  	    text-align: center;
+  	    padding: 12px 25px;
+  	    cursor:pointer;
+  	    text-transform:uppercase;
+  	    border-radius: 5px;
+  	    display: inline-block;
+  	    margin-right:50px;
+  	    color: #fff;
+  	    letter-spacing: 0;
+  	    border: double 2px transparent;
+  	    box-shadow: 0 10px 30px rgba(118,85,225,.3)radial-gradient(circle at top left,#4458dc,#854fee);
+  	    background-image: linear-gradient(to right,#4458dc 0%,#854fee 100%);
+
+  }
+  
+  header{
+  	     width: 100%;
+  	     height: 100vh;
+  	     background-image: linear-gradient(to left,#fff 80%,#c3f5ff 20%);
+  }
+  .new{
+  	   width: 100%;
+  	   height: 20vh;
+  	   display: flex;
+  	   justify-content: space-around;
+  	   align-items: center;
+  	   background-image: linear-gradient(to top,#fff 80%,#c3f5ff 20%);
+  }
+  .logo{
+  	    width: 40%
+  	    color:#fff;
+  	    background-image: linear-gradient(#8d98e3 40%,#854fee 60%);
+  	    padding-left: 100px;
+  	    box-sizing: border-box;
+  }
+  .logo h1{
+  	       text-transform: uppercase;
+  	       font-size: 1.6rem;
+  	       animation: aggepiche 2s linear infinite;
+  	       animation-direction: alternate;
+  }
+  @keyframes aggepiche{
+  	                   from{padding-left: 40px;}
+  	                   to{padding-right: 40px;}
+  } 
+  nav{
+  	   width: 100%;
+  	   display: flex;
+  	   justify-content: space-around;
+  }
+  nav a{
+  	   text-decoration: none;
+  	   text-transform: uppercase;
+  	   color:#000;
+  	   font-weight: 900;
+  	   font-size: 17px;
+  	   position: relative;
+  }
+ nav a:before {
+                content: " ";
+                position: absolute;
+                top: 110%;
+                left: 0;
+                width: 0;
+                height: 2px;
+                border-bottom: 2px solid #4458dc;
+                transition: all 0.4s linear;
+  }
+  nav a:hover:before{
+  	                 width: 100%;
+  }
+  .sliderframe{
+  	           overflow: hidden;
+  	           height: 800px;
+  	           width: 1200px;
+  	           margin-left: 360px;
+  	           margin-top: 20px;      
+  }
+  @-webkit-keyframes slide_animation{
+                                     0%{left:0px;}
+  	                                 10%{left:0px;}
+  	                                 20%{left:1200px;}
+  	                                 30%{left:1200px;}
+                                     40%{left:2400px;}
+                                     50%{left:2400px;}
+                                     60%{left:1200px;}
+                                     70%{left:1200px;}
+                                     80%{left:0px;}
+                                     90%{left:0px;}
+                                     100%{left:0px;}
+  }
+  .slideimg{
+  	        width: 3600px;
+  	        height: 800px;
+  	        margin: 0 0 0 -2400px;
+  	        position: relative;
+  	        -webkit-animation-name:slide_animation;
+  	        -webkit-animation-duration:33s;
+  	        -webkit-animation-iteration-count: infinite;
+            -webkit-animation-direction: alternate;
+            -webkit-animation-play-state: running;
+  }
+  .imgcontainer{
+  	            height: 800px;
+  	            width: 1200px;
+  	            position: relative;
+  	            float: left;
+  }
+ 
